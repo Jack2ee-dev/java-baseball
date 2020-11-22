@@ -3,11 +3,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class RandomNumbers {
-    private int RANDOM_NUMBER_START = 1;
-    private int RANDOM_NUMBER_END = 9;
-    private int RANDOM_NUMBER_SIZE = 3;
+    private static int RANDOM_NUMBER_START = 1;
+    private static int RANDOM_NUMBER_END = 9;
+    private static int RANDOM_NUMBER_SIZE = 3;
 
-    List<Integer> randomNumbers;
+    private List<Integer> randomNumbers;
 
     public RandomNumbers() {
         this.randomNumbers = selectThreeNumbersRandomly(generateNumberListBetweenOneAndNine());
@@ -32,10 +32,5 @@ public class RandomNumbers {
 
     public List<Integer> getRandomNumbers() {
         return this.randomNumbers;
-    }
-
-    @Override
-    public String toString() {
-        return this.randomNumbers.toString();
     }
 }
