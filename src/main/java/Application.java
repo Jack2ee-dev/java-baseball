@@ -3,6 +3,7 @@ public class Application {
         RandomNumbers randomNumbers = new RandomNumbers();
         System.out.println(randomNumbers.getRandomNumbers());
         UserInput userInput = new UserInput();
-        System.out.println(userInput.getUserInput());
+        Player player = new Player(userInput.received());
+        System.out.println(player.getPlayerNumbers());
     }
 }
